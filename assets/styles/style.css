@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Top Button */
+
+.container {
+    margin: 0 120px;
+}
+
+.header {
+    margin-top: 40px;
+    padding-bottom: 16px;
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid rgb(202, 188, 188);
+}
+
+.header .title {
+    float: left
+}
+
+.flex-container-header {
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-between;
+}
+
+.btn {
+    border: 1px solid rgb(250, 42, 42);
+    margin-right: 28px;
+    padding: 4px;
+    box-shadow: 2px 2px 8px #000;
+    background-color: #fff;
+    opacity: 0.6;
+}
+
+.btn:hover {
+    background-color: rgb(250, 42, 42);
+    color: white;
+    opacity: 0.8;
+}
+
+/* Content */
+
+.flex-container {
+    /* background-color: skyblue; */
+    /* border: 5px solid purple; */
+    margin: 20px auto;
+    /* padding: 8px; */
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.flex-div {
+    height: 240px;
+    border: 20px solid white;
+    flex-basis: 25%;
+}
+
+.flex-div-bord {
+    border: 2px solid black;
+    padding: 20px;
+    height: 100%;
+}
+
+.flex-div-bord:hover{
+    box-shadow: -8px 8px 5px #aaaaaa;
+    margin-top: -4px;
+}
+
+.flex-div-bord
+.delete-checkbox {
+    width: 16px;
+    height: 16px;
+}
+
+
+.flex-div-bord
+p {
+    text-align: center;
+    margin: 4px 0;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+footer
+h3 {
+    border-top: 1px solid rgb(202, 188, 188);
+    padding: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .flex-div {
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .flex-div {
+        flex-basis: 100%;
+    }
+}
+
